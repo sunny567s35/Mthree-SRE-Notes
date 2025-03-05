@@ -1,6 +1,3 @@
-Here’s your SQL learning documentation formatted as a **Markdown (`.md`) file** with proper syntax for headings, tables, and links.
-
-* * *
 
 ### **SQL Learning Documentation - 10-02-2025**
 
@@ -360,7 +357,3 @@ No extra spaces
 5.  [Invalid Tweets](https://leetcode.com/problems/invalid-tweets/description/)
 
 * * *
-
-This document is now fully formatted as **Markdown (`.md`)**! 🚀
-
-![Export to Google Doc](chrome-extension://iapioliapockkkikccgbiaalfhoieano/assets/create.svg)![Copy with formatting](chrome-extension://iapioliapockkkikccgbiaalfhoieano/assets/copy.svg)![Select for Multi-select](chrome-extension://iapioliapockkkikccgbiaalfhoieano/assets/multi-select.svg)
