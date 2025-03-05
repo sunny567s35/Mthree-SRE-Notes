@@ -1,9 +1,9 @@
 
 * * *
 
-# DevOps & Cloud Learning Repository
+# SRE Repository
 
-This repository contains structured learning materials on **Git, SQL, Shell Scripting, Docker, Jenkins, Kubernetes, and Flask deployment on AWS EC2**. The content is organized by **weeks**, covering key DevOps and cloud concepts.
+This repository contains structured learning materials on **Git, SQL, Shell Scripting, Docker, Jenkins, Kubernetes, and Flask deployment on AWS EC2**. The content is organized by **weeks**, covering key SRE and Scripting concepts.
 
 ---
 
