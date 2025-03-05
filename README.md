@@ -1,19 +1,14 @@
 
 * * *
 
-`# DevOps & Cloud Learning Repository
+# DevOps & Cloud Learning Repository
 
 This repository contains structured learning materials on **Git, SQL, Shell Scripting, Docker, Jenkins, Kubernetes, and Flask deployment on AWS EC2**. The content is organized by **weeks**, covering key DevOps and cloud concepts.
 
 ---
 
-## 📂 Directory Structure` 
 
-📦 DevOps-Learning │── 📂 WEEK-1 │ ├── 📄 Git Bash Commands & Concepts.pdf │ ├── 📄 Git\_basics.md │ ├── 📄 Sql-concepts.md │ ├── 📄 sql-concepts-2.md │ │── 📂 WEEK-2 │ ├── 📄 Day-10 SSH key setup & Jenkins setup.pdf │ ├── 📄 Day-6.pdf │ ├── 📄 Day-7.pdf │ ├── 📄 Day-8-Shell Scripting & Commands.pdf │ ├── 📄 Day-9-linux\_commands.pdf │ │── 📂 WEEK-3 │ ├── 📄 Day-11-Docker.docx.pdf │ ├── 📄 Day-12-Jenkins.pdf │ ├── 📄 Jenkins-concepts.md │ ├── 📄 Kubernetes.pdf │ ├── 📂 kubernetes\_and\_jenkins\_deployments │ │── 📂 WEEK-4 │ ├── 📄 flask-x-kubernets-ft.aws-ec2.md │ ├── 📄 python-practice.md
-
-markdown
-
- `---
+---
 
 ## 📖 Repository Overview
 
