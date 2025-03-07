@@ -1,7 +1,3 @@
-Here are your notes:
-
-1.  **OOPs in Python** - Key concepts with simple code examples.
-2.  **Types of `.yaml` files in Kubernetes** - Description and examples in a well-formatted `.md` file.
 
 * * *
 
