@@ -3,7 +3,7 @@
 
 
 
-``# **Python OOP Concepts - Constructors, Destructors, Shallow Copy & Deep Copy**
+# **Python OOP Concepts - Constructors, Destructors, Shallow Copy & Deep Copy**
 
 ## **1. Constructors (`__init__` Method)**
 A **constructor** is a special method in Python that is **automatically called** when an object is created. It initializes the object's attributes.
@@ -20,7 +20,7 @@ class Animal:
 # Creating an object of the Animal class
 animal = Animal("Lion")
 print(animal.speak())  # Output: Animal Lion is speaking`` 
-
+```
 ### **🔴 Common Errors in Constructors**
 
 1.  **Wrong method name (`_init_` instead of `__init__`)**
@@ -243,4 +243,4 @@ p2 = p1  # ❌ Wrong: This only copies the reference, not the object`
 
 
 
- `--- 
+ 
