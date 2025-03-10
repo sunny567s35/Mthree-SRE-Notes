@@ -261,3 +261,161 @@ metadata.create_all(engine)`
 *   NumPy: **Efficient numerical computations**.
 *   Pandas: **Powerful data analysis tools**.
 *   SQLAlchemy: **Seamless database integration**.
+*   
+
+* * *
+
+**Fixing Python Linting and SQLite Version Resolution Issues**
+==============================================================
+
+**1\. Linting Not Working for Python**
+--------------------------------------
+
+If Python linting (e.g., **pylint**, **flake8**, or **mypy**) is not working, follow these steps to resolve it.
+
+### **1.1 Check If the Linter Is Installed**
+
+Ensure that the required linter is installed in your current environment.
+
+`pip list | grep pylint  # Check if pylint is installed
+pip list | grep flake8  # Check if flake8 is installed` 
+
+If not installed, install it using:
+
+`pip install pylint flake8` 
+
+### **1.2 Check If the Linter Works Manually**
+
+Try running the linter manually on a Python file:
+
+`pylint your_script.py
+flake8 your_script.py` 
+
+If it works manually but not in your editor, the issue might be with your editor settings.
+
+### **1.3 Configure Linter in VS Code (If Using VS Code)**
+
+If you are using **VS Code**, ensure the Python linter is enabled.
+
+#### **Enable Linting**
+
+1.  Open **VS Code**.
+2.  Press `Ctrl + Shift + P` and type `"Python: Select Linter"`.
+3.  Choose the linter you want (`pylint`, `flake8`, or `mypy`).
+4.  Alternatively, add the following to **settings.json**:
+    
+    `{
+        "python.linting.enabled": true,
+        "python.linting.pylintEnabled": true,
+        "python.linting.flake8Enabled": true
+    }` 
+    
+
+#### **Ensure VS Code Uses the Correct Python Interpreter**
+
+1.  Press `Ctrl + Shift + P` and type `"Python: Select Interpreter"`.
+2.  Select the correct Python interpreter (virtual environment if needed).
+
+### **1.4 Check for Linter Conflicts**
+
+If multiple linters are installed, ensure they are not conflicting. Try disabling one linter and testing again.
+
+Example: If using `flake8`, disable `pylint`:
+
+`{
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true
+}` 
+
+* * *
+
+**2\. SQLite Version Resolution Issue**
+---------------------------------------
+
+When **two versions of SQLite** are installed—one **globally** and one in a **virtual environment**—but you need to access the **global SQLite version**, follow these steps.
+
+### **2.1 Identify SQLite Versions**
+
+First, check the installed SQLite versions:
+
+#### **Check Global SQLite Version**
+
+`sqlite3 --version` 
+
+#### **Check SQLite Version in Virtual Environment**
+
+Activate your virtual environment and check:
+
+`source venv/bin/activate  # macOS/Linux
+venv\Scripts\activate  # Windows
+
+python -c "import sqlite3; print(sqlite3.sqlite_version)"` 
+
+* * *
+
+### **2.2 Force Python to Use the Global SQLite Version**
+
+By default, Python will use the SQLite version installed within its environment. To force it to use the **global SQLite**, you need to set the **LD\_LIBRARY\_PATH** (Linux/macOS) or modify the **DLL path** (Windows).
+
+#### **On Linux/macOS:**
+
+Set the **LD\_LIBRARY\_PATH** to the global SQLite version:
+
+`export LD_LIBRARY_PATH=/usr/lib:$LD_LIBRARY_PATH` 
+
+To make this change permanent, add the line to your `~/.bashrc` or `~/.zshrc`:
+
+`echo 'export LD_LIBRARY_PATH=/usr/lib:$LD_LIBRARY_PATH' >> ~/.bashrc
+source ~/.bashrc  # Apply changes` 
+
+#### **On Windows:**
+
+Modify the system **PATH** environment variable:
+
+1.  Open **Command Prompt** as Administrator.
+2.  Find the path of the global SQLite DLL:
+    
+    `where sqlite3` 
+    
+3.  Add this path to **Environment Variables**:
+    *   Go to **Control Panel** > **System** > **Advanced System Settings** > **Environment Variables**.
+    *   Find `Path` under **System Variables** and add the SQLite global directory.
+
+Alternatively, manually point Python to the global SQLite version:
+
+`import os
+os.environ['PATH'] = "C:\\path\\to\\global\\sqlite;" + os.environ['PATH']
+import sqlite3
+print(sqlite3.sqlite_version)` 
+
+* * *
+
+### **2.3 Use the Global SQLite Version Inside Virtual Environments**
+
+If you must use the global SQLite version inside your virtual environment, you can do the following:
+
+#### **Method 1: Uninstall SQLite from Virtual Environment**
+
+`pip uninstall pysqlite3-binary` 
+
+#### **Method 2: Create a Virtual Environment Without SQLite**
+
+`python -m venv --without-pip venv` 
+
+This prevents SQLite from being installed inside the virtual environment.
+
+* * *
+
+### **2.4 Verify the Change**
+
+After applying the changes, restart your terminal and check again:
+
+`python -c "import sqlite3; print(sqlite3.sqlite_version)"` 
+
+* * *
+
+**Conclusion**
+--------------
+
+*   **For linting issues**, ensure the correct linter is installed, manually test it, and configure the editor settings.
+*   **For SQLite version conflicts**, modify environment variables or force Python to use the global SQLite installation.
