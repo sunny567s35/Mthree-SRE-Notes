@@ -95,8 +95,9 @@ export default Counter;
     * When the number changes, React makes the screen show the new number.
   
 <div style="display: flex;">
-  <img src="../images/day-22/screenshot2.jpg" alt="A cat image" style="width: 47%; margin-right: 5px;">
-  <img src="../images/day-22/screenshot1.jpg" alt="A dog image" style="width: 47%; margin-left: 5px;">
+    ![image](https://github.com/user-attachments/assets/e99f3e3c-a840-4590-bb98-909008412733)
+    ![image](https://github.com/user-attachments/assets/232dfb1a-8451-4bbe-bd5f-ed261a7792f1)
+    ![image](https://github.com/user-attachments/assets/fb124497-95d3-4f3f-b1bc-f56f53198c40)
 </div>
 
 ## React Theme Toggle
@@ -134,11 +135,7 @@ Clicking the button calls `toggleTheme`, which flips the theme state.
 Styled-jsx dynamically applies CSS to the `body` tag, changing background and text colors based on the current theme state. 
 The button text also changes to reflect the next theme.
 
-<div style="display: flex;">
-  <img src="../images/screenshot1.jpg" alt="A cat image" style="width: 47%; margin-right: 5px;">
-  <img src="../images/screenshot2.jpg" alt="A dog image" style="width: 47%; margin-left: 5px;">
-  <img src="../images/screenshot3.jpg" alt="A dog image" style="width: 47%; margin-left: 5px;">
-</div>
+
 
 ## React Todo Component
 
