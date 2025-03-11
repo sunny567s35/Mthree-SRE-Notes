@@ -94,11 +94,11 @@ export default Counter;
 3.  **React updates the screen:**
     * When the number changes, React makes the screen show the new number.
   
-<div style="display: flex;">
+
     ![image](https://github.com/user-attachments/assets/e99f3e3c-a840-4590-bb98-909008412733)
     ![image](https://github.com/user-attachments/assets/232dfb1a-8451-4bbe-bd5f-ed261a7792f1)
     ![image](https://github.com/user-attachments/assets/fb124497-95d3-4f3f-b1bc-f56f53198c40)
-</div>
+
 
 ## React Theme Toggle
 
@@ -272,4 +272,4 @@ export default UserInput;
 This component creates a form to collect user information (name, email, address). 
 `useState` manages input values and an array of submitted users. 
 On form submit, `handleSubmit` adds the user data to the `users` array and clears the input fields. 
-The component then renders a table displaying the submitted user data. The table maps through the `users` array, creating a table row for each user.![image](https://github.com/user-attachments/assets/302cc18c-e94c-43c7-8af7-ff2ec63f0167)
+The component then renders a table displaying the submitted user data. The table maps through the `users` array, creating a table row for each user.
