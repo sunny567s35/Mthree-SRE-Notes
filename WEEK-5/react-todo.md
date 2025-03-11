@@ -97,7 +97,8 @@ export default Counter;
 
     ![image](https://github.com/user-attachments/assets/e99f3e3c-a840-4590-bb98-909008412733)
     ![image](https://github.com/user-attachments/assets/232dfb1a-8451-4bbe-bd5f-ed261a7792f1)
-    ![image](https://github.com/user-attachments/assets/fb124497-95d3-4f3f-b1bc-f56f53198c40)
+    ![image](https://github.com/user-attachments/assets/11abfb33-4762-45e9-a88f-22d2c094876d)
+
 
 
 ## React Theme Toggle
