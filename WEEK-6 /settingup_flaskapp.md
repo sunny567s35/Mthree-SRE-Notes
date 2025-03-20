@@ -351,7 +351,6 @@ kubectl port-forward prometheus-prometheus-pushgateway-544579d549-q8g7g 9091 -n 
 <img width="310" alt="image" src="https://github.com/user-attachments/assets/cd283341-99aa-474b-8681-759a67ac05ae" />
 ![Metrics]
 <img width="535" alt="image" src="https://github.com/user-attachments/assets/97c963ad-fc31-4d09-8a7e-0eb670b9a248" />
-<img src = "https://github.com/user-attachments/files/19346756/New.dashboard-1742370827591" />
 
 # Final Steps
 - Reviewed all concepts in the afternoon session
